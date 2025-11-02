@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Another test</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Irma Valeria Natalia Rodríguez Cárdenas, Personal introduction and country overview.">
+    <meta name="author" content="Irma Valeria Natalia Rodríguez Cárdenas">
+    <title>WDD 131 - Dynamic Web Fundamentals - Irma Valeria Natalia Rodríguez Cárdenas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>HII</h1>
-    <p>I just want to see if this works</p>
+    <div class="page-container">
+        <header>
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+            <nav>
+                <a href="https://www.linkedin.com/in/irma-valeria-rodriguez-cardenas-5a1a91362/">LinkedIn</a>
+                <a href="https://byupw.instructure.com/">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+                <a href="#">Final Project</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Irma Valeria Natalia Rodríguez Cárdenas</h1>
+            <section class="card about">
+                <h2>About me</h2>
+                <div class="about-content">
+                    <p>My name is Irma Valeria. I am from Colombia. I am studying Web and Computer Programming. I have many hobbies such as: painting, crocheting, drawing, walking and serving others. I enjoy learning new things every day. I believe that knowledge is the key to progress.</p>
+                    <img src="images/irmapicture.jpg" alt="Irma Valeria Natalia Rodríguez Cárdenas picture.">
+                </div>
+                <h2>Colombia</h2>
+                <div class="colombia">
+                    <div class="flag">
+                        <img src="images/colombia3.jpeg" alt="Colombia flag">
+                        <p><em>Official Flag of Colombia</em></p>
+                    </div>
+                    <div class="country-info">
+                        <p>Colombia is a wonderful country. It has different types of weather. Colombia is located on the equator line, which is why we don not have seasons. We have a tropical climate. In each city, we can experience different temperatures. Even though we don not have snow in most places, we have a mountain called Nevado del Ruiz where it actually snows. We also have amazing landscapes such as the River of Seven Colors and the Tatacoa Desert. Colombia has great diversity in plants and animals, and our food is delicious.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card link">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="#">Dev. to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy;<span id="currentyear"></span> 🎀 Irma Valeria Natalia Rodríguez Cárdenas 🎀 Colombia</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
 </body>
+
 </html>
