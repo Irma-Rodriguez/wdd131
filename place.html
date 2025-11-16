@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Colombia Page</title>
+    <meta name="description" content="WDD 131 - County page, Learn new things about Colombia.">
+    <meta name="author" content="Irma Valeria Natalia Rodríguez Cárdenas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Colombia</h1>
+    </header>
+
+    <main class="page-wrapper">
+
+      <section class="hero">
+          <picture>
+              <source srcset="images/hero-large.webp" media="(min-width: 600px)">
+              <img src="images/hero-small.webp" alt="Santa Marta, Colombia." width="1200" height="800">
+          </picture>
+
+          <section class="data card">
+              <h2>Data</h2>
+              <ul>
+                <li><strong>Area:</strong> 1,140,619 Km²</li>  
+                <li><strong>Population:</strong> ~52,886,363</li>  
+                <li><strong>Capital:</strong> Bogota</li>
+                <li><strong>Languages:</strong> Español</li>
+                <li><strong>Currency:</strong> Peso colombiano (COP)</li>
+                <li><strong>Time Zone:</strong> UTC-5</li>
+                <li><strong>Calling Code:</strong> +57</li>
+                <li><strong>Internet TLD:</strong> .co</li>
+              </ul>      
+          </section>
+
+          <section class="weather card">
+              <h2>Weather</h2>
+              <img src="images/weather.png" class="weather-icon" alt="Weather icon" width="80" height="80" loading="lazy">
+              <ul>
+                <li><strong>Temperature:</strong> <span id="temp">14.5</span> °C</li>  
+                <li><strong>Conditions:</strong> Variable y templado durante todo el año</li>
+                <li><strong>Wind:</strong> <span id="wind">5.5</span> km/h</li>  
+                <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+              </ul>
+          </section>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🦜 Irma Valeria Natalia Rodríguez Cárdenas 🦜 Colombia</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
