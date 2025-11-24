@@ -5,13 +5,13 @@ const menuButton = document.getElementById("menu");
 const nav = document.querySelector("nav");
 
 menuButton.addEventListener("click", () => {
-    if (nav.style.display === "flex") {
-        nav.style.display = "none";
-        menuButton.innerHTML = "&#9776;";
-    } else {
-        nav.style.display = "flex";
-        menuButton.innerHTML = "&#x2715;";
-    }
+    const isOpen = nav.style.display === "flex";
+
+    nav.style.display = isOpen ? "none" : "flex";
+
+    menuButton.innerHTML = isOpen ? "&#9776;" : "&#x2715;";
+    
+    menuButton.setAttribute("aria-expanded", !isOpen);
 });
 
 const temples = [
