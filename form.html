@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a form to submit a product review, applying what I learned in week 05">
+    <meta name="author" content="Irma Valeria Natalia Rodriguez Cardenas">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form method="get" action="review.html">
+
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <fieldset class="rating-group">
+                    <legend>Overall Rating</legend>
+
+                    <div class="rating-item">
+                        <label for="rating1" class="star">☆</label>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </div>
+
+                    <div class="rating-item">
+                        <label for="rating2" class="star">☆☆</label>
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                    </div>
+
+                    <div class="rating-item">
+                        <label for="rating3" class="star">☆☆☆</label>
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                    </div>
+
+                    <div class="rating-item">
+                        <label for="rating4" class="star">☆☆☆☆</label>
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                    </div>
+
+                    <div class="rating-item">
+                        <label for="rating5" class="star">☆☆☆☆☆</label>
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                    </div>
+                </fieldset>
+
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+
+                <fieldset class="features-group">
+                    <legend>Which features did you find useful?</legend>
+                    <p class="subtext">(Check all that apply)</p>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature1" name="features" value="durability">
+                        <label for="feature1">Durability</label>
+                    </div>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature2" name="features" value="ease">
+                        <label for="feature2">Ease of Use</label>
+                    </div>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature3" name="features" value="performance">
+                        <label for="feature3">Performance</label>
+                    </div>
+
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature4" name="features" value="design">
+                        <label for="feature4">Design</label>
+                    </div>
+                </fieldset>
+
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+
+                <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+
+                <input type="submit" value="Post Review">
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍄 Irma Valeria Natalia Rodriguez Cardenas 🍄 Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
