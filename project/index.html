@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Cold porcelain creations</title>
+    <meta name="description" content="WDD 131 - Page to learn about clod porcelain and show my creations">
+    <meta name="author" content="Irma Valeria Natalia Rodríguez Cárdenas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/cold-porcelain.css">
+    <script defer src="scripts/cold-porcelain.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Cold Porcelain Creations</h1>
+        <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+        <nav class="nav-links" aria-label="Main navigation">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main class="page-wrapper">
+
+        <section class="hero">
+        <picture>
+              <source srcset="images/hero-desktop.jpeg" media="(min-width: 600px)">
+              <img src="images/hero-mobile.jpeg" alt="Santa Marta, Colombia." width="1200" height="800">
+        </picture>
+
+        <section class="data card">
+            <h2>Welcome to Cold Porcelain Creations</h2>
+            <p>Learn what cold porcelain is, how to create your own pieces, and explore ideas that can inspire you!</p>
+                  
+        </section>
+
+        <section class="weather card">
+            <h2>Beneficts of cold porcelain</h2>
+            <ul>
+                <li>Lightweight and durable</li>
+                <li>Easy to mold and paint</li>
+                <li>Dries at room temperature</li>
+                <li>Beginner firendly</li>
+            </ul>
+        </section>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌷 Irma Valeria Natalia Rodríguez Cárdenas 🌷 Colombia</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
