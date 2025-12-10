@@ -1,6 +1,6 @@
 :root {
     --color-bg: #ffffff;
-    --color-primary: #FD6601;
+    --color-primary: #d95500;
     --color-secondary: #3d1c39;
     --color-text: #1a1a1a;
     --color-accent: #f1b419;
@@ -30,7 +30,7 @@ header h1 {
 }
 
 h2 {
-    color: #FD6601;
+    color: #d95500;
 }
 
 #menu {
