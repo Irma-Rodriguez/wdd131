@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px){
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        gap: 2rem;
+        background: none;
+        justify-content: flex-end;
+        padding-right: 1rem; 
+        width: 100%;
+    }
+
+    main {
+        max-width: 1000px;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #contact input#name,
+    #contact input#email {
+        width: 48%;
+    }
+
+     #contact select#topic {
+        width: 48%;
+    }
+
+    #contact textarea#message {
+        width: 48%;
+        height: 120px; 
+    }
+
+    #contact button {
+        width: 48%;        
+        padding: 0.5rem 1rem;
+        font-size: 1rem;   
+    }
+
+
+}

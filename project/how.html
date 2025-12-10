@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this page the user will lean how to make cold porcelain in 3 easy steps.">
+    <meta name="author" content="Irma Valeria Natalia Rodríguez Cárdenas">
+    <title>WDD 131 - Cold porcelain creations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/how.css">
+    <link rel="stylesheet" href="styles/how-large.css">
+    <script src="scripts/how.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cold Porcelain Creations</h1>
+        <button id="menu" aria-label="Menu">&#9776;</button>
+        <nav>
+            <a id="home" href="index.html">Home</a>
+            <a id="gallery" href="gallery.html">Gallery</a>
+            <a id="How to" href="how.html">How to</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="page-title">Cold porcelain</h2>
+        <div id="tips-cards" class="tips-grid">
+            
+        </div>
+
+        <section id="contact">
+            <h2>Have questions or comments about the information?</h2>
+            <p>Send me amessage if you have questions or suggestions.</p>
+
+            <form id="form-tips" action="#" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label>What is your message about?</label><br>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="questions" name="topic" value="questions">
+                        <label for="questions">Questions</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="suggestion" name="topic" value="suggestion">
+                        <label for="suggestion">Suggestion</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="other" name="topic" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <label for="message">Your message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe" class="square-checkbox">
+                    <label for="subscribe">I want to receive updates by email about cold porcelain</label>
+                </div>
+
+                <button type="submit">Send a message!</button>
+            </form>
+
+            <p id="response"></p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> 🌷 Irma Valeria Natalia Rodríguez Cárdenas 🌷 Colombia </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
